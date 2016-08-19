@@ -11,7 +11,7 @@ RUN apt-get update \
     && curl -LO https://jmeter-plugins.org/downloads/file/JMeterPlugins-Extras-$JMETER_PLUGIN_EXTRAS_VERSION.zip \
     && tar -zxvf apache-jmeter-$JMETER_VERSION.tgz \
     && mv apache-jmeter-$JMETER_VERSION apache-jmeter \
-    && unzip -u JMeterPlugins-Extras-$JMETER_PLUGIN_EXTRAS_VERSION.zip -d /apache-jmeter-$JMETER_VERSION \
+    && unzip -u JMeterPlugins-Extras-$JMETER_PLUGIN_EXTRAS_VERSION.zip -d /apache-jmeter \
     && rm apache-jmeter-$JMETER_VERSION.tgz \
     && rm JMeterPlugins-Extras-$JMETER_PLUGIN_EXTRAS_VERSION.zip \
     && apt-get purge unzip \
