@@ -1,6 +1,6 @@
 FROM oberthur/docker-ubuntu-java:jdk8_8.121.13_V3
 
-MAINTAINER Norbert Gebicki <k.witkowski@oberthur.com>
+MAINTAINER Krzysztof Witkowski <k.witkowski@oberthur.com>
 
 ENV JMETER_VERSION='3.1' \
 JMETER_PLUGIN_EXTRAS_VERSION='1.4.0' \
