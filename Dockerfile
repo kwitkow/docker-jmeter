@@ -8,8 +8,8 @@ JMETER_PLUGIN_STANDARD_VERSION='1.4.0' \
 JMETER_CMD_VERSION='2.1'
 
 RUN apt-get update \
-    && apt-get -y install unzip \
-    && curl -LO http://www-us.apache.org/dist/jmeter/binaries/apache-jmeter-$JMETER_VERSION.tgz \ 
+    && apt-get -y install apt-utils curl unzip \
+    && curl -LO https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-$JMETER_VERSION.tgz \ 
     && curl -LO https://jmeter-plugins.org/downloads/file/JMeterPlugins-Extras-$JMETER_PLUGIN_EXTRAS_VERSION.zip \
     && curl -LO https://jmeter-plugins.org/downloads/file/JMeterPlugins-Standard-$JMETER_PLUGIN_STANDARD_VERSION.zip \
     && tar -zxvf apache-jmeter-$JMETER_VERSION.tgz \
